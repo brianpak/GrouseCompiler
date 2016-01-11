@@ -1,0 +1,29 @@
+main {
+    imm income := 3000; // integer and float
+    var bonus := 200;
+    imm taxrate := 0.10;
+    var lend := 500;
+    imm repaid := 0.5;
+    imm bill := 700;
+    imm div := 2;
+    
+    var c := 'o;	// char, bool and string
+    var b := true;
+    var s := "employed";
+
+    imm net1 := taxrate * (income + bonus) : float 
+			- ((lend + bill) / div) : float
+			+ (lend : float * repaid);
+
+    let bonus := bonus + 200; //400
+    let lend := lend * 2; // 1000
+
+    imm net2 := taxrate * (income + bonus) : float 
+			- ((lend + bill) / div) : float
+			+ (lend : float * repaid);
+    let c := 'x;
+    let b := false;
+    let s := "unemployed";
+
+    print net1 > net2, c, b, s; // -30 > -10 false, 'x, false, unemployed
+}

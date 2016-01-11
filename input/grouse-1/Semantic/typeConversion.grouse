@@ -1,0 +1,27 @@
+main {
+    imm a := 248;
+	imm aa := 0;
+    imm b := 'g;
+    imm c := 3.3;
+    imm d := true;
+
+    imm e := b : int;
+    imm f := a : char;
+    imm g := a : float + 0.1;
+    imm h := c : int;
+    imm i := a : bool;
+    imm j := b : bool;
+	imm jj := aa : bool;
+
+    imm k := a + e;
+    imm l := c + g;
+    imm m := a + h;
+    imm n := d == i;
+    imm o := d == j;
+	imm p := d == jj;
+	imm q := d != jj;
+
+    print e,f,g,h,i,j,jj nl; 	 // 103, x, 248.1, 3, true, true, false
+    print k,l,m,n,o,p,q nl;	 // 351, 251.4, 251, true, true, false, true
+	print 3,,4, nl nl;
+}

@@ -1,0 +1,10 @@
+main {
+    imm a := 5;
+    imm b := -5;
+    imm c := -5.5e+5;
+    imm d := 5.5;
+    imm e := -5.5e5;
+    imm f := -5.;
+    imm g := -;
+    imm h := 5.5e; \n
+}

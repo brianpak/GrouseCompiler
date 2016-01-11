@@ -1,0 +1,22 @@
+main {
+    var a := 2;
+    {
+        var b := a;
+    }
+    {
+        var c := a;
+        {
+            var d := a;
+            {
+                var e := a;
+                var f := a;
+            }
+        }
+    }
+    {
+        var z := a;
+        var zz := a;
+    }
+    
+    print a;
+}

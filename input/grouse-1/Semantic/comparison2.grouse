@@ -1,0 +1,25 @@
+main {
+	var a := "apple";
+	var b := a;
+	var c := "apple";
+	
+	print a == b, a == c nl; // true, false
+	
+	var d := 5;
+	var e := d;
+	var f := 7;
+	
+	print d * e / 4 + 1 == f nl; // true
+	
+	var g := 't;
+	var h := g;
+	
+	print h == 116 : char nl; // true
+	
+	var i := 2.2;
+	var j := i;
+	var k := 8.8;
+	
+	print (j + k) - 1.0 == 10 : float; // true
+
+}

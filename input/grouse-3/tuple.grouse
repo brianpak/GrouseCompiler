@@ -1,0 +1,35 @@
+//tuple turkey (int a, float b);
+//tuple duck (int a, float b, int c);
+
+//tuple robin ();
+//tuple woodThrush (bool b);
+//tuple variedThrush woodThrush;
+
+//tuple crow (bird b, char c);
+
+//tuple bleh (test t, char d);
+tuple swan bird;
+tuple bird (int i, float c);
+tuple test swan;
+
+//func test(int a, float b)->(int x, float b) {	
+//}
+
+main {
+	//imm a := fresh turkey(1, 0.8);
+	//imm b := fresh turkey(2, 1.6);
+	//imm c := fresh turkey(3, 2.4);
+
+	//imm d := fresh bird([0,1], [0.8,1.6]);
+	//imm e := fresh bird([2,3,4], [2.4]);
+	//imm f := fresh bird([5], [3.2,4.0]);
+	//print [d,e,f] nl;
+
+	imm x := fresh swan(5, 2.3);
+	imm y := 5;
+	//imm y := fresh bleh(x, 'd);
+	
+	print x.c;
+	
+	//print fresh[bird](5); seems working
+}

@@ -1,0 +1,16 @@
+tuple def (abc a, float d);
+tuple abc (float b, char x);
+
+func f2(int c)->(bool d) {
+	let d := f3(0.3);
+}
+
+func f3(float e)->(bool f) {
+	print 0;
+	let f := true;
+}
+
+main {
+	imm c := f2(2);
+	print c;
+}

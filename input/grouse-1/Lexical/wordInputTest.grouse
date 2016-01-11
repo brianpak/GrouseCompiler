@@ -1,0 +1,13 @@
+main {
+    imm a := "\n";
+    imm e := "abc\n";
+    imm b := '\n;
+//    imm c := ";
+    imm d := "abc";
+//    imm f := "abc
+//;"
+//    imm g := abc
+//;
+//    imm h := 'a
+    imm i := "123'a";
+}

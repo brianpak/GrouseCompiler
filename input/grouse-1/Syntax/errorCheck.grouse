@@ -1,0 +1,6 @@
+main {
+	imm a := 5;
+	let b := a;
+	
+	print b;
+}

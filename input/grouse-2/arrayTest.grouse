@@ -1,0 +1,38 @@
+main {
+    //var a := b + a[5];
+    //let a := a + [5];
+    //let a := a[5];
+    //let a := a[5][5];
+    //let a := a[5][5][5];
+    //let a := [5];
+    //let a := [5, 5, 5];
+    
+    //let a := [a[5], a[5], a[5]];
+    //let a := a[b + 10];
+
+    //let a := !a a[5];  cannot happen because an identifier cannot be followed by an identifier
+    //let a := []; invalid
+    //let a := a[]; invalid
+
+    //let a := [2, 2, 2][2]; seems possible
+    //let a := [[1,2],[3,4,5],[6]];
+    //let a := a[a[5]]; 
+    //let a := a [5];
+
+    //let a := fresh[int](5);
+    //let a := fresh[[[int]]](5);
+    //let a := copy [[1,2], [3,4,5], fresh[int](4)];
+
+    //imm a := [1,2,3];
+    //imm a := fresh[int](3);
+    imm a := [[5],[4,3],[0,1,2]][2];
+    //imm a := copy[[1],[2],[3]];
+
+    //imm a := [1,2,3];
+    //imm a := fresh[int](2);
+    //imm a := copy [1,2];
+    //INDEX OUT OF BOUNDS ERROR
+
+    let a[2] := 5;
+    print a;
+}

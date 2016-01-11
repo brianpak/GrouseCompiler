@@ -1,0 +1,19 @@
+main {
+    var a := 0;
+    while (a < 3) {
+        print a nl;
+        let a := a + 1;
+
+        var b := 0;
+        while (b < 6) {
+        	print ,,,,b nl;
+        	let b := b + 2;
+
+            var c := 0;
+            while (c < 15) {
+                print ,,,,,,,,c nl;
+                let c := c + 5;
+            }
+        }
+    }
+}

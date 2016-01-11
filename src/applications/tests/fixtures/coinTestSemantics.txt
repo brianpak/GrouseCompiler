@@ -1,0 +1,55 @@
+ProgramNode (MAIN)  [scope:23 bytes] 
+    MainBlockNode (OPEN_BRACE)  
+        DeclarationNode (IMMUTABLE) INTEGER 
+            IdentifierNode (Identifier, quarters) INTEGER 
+            IntegerConstantNode (Integer, 5) INTEGER 
+        DeclarationNode (IMMUTABLE) INTEGER 
+            IdentifierNode (Identifier, dimes) INTEGER 
+            IntegerConstantNode (Integer, 3) INTEGER 
+        DeclarationNode (IMMUTABLE) INTEGER 
+            IdentifierNode (Identifier, nickels) INTEGER 
+            IntegerConstantNode (Integer, 7) INTEGER 
+        DeclarationNode (IMMUTABLE) INTEGER 
+            IdentifierNode (Identifier, pennies) INTEGER 
+            IntegerConstantNode (Integer, 17) INTEGER 
+        DeclarationNode (IMMUTABLE) INTEGER 
+            IdentifierNode (Identifier, value) INTEGER 
+            BinaryOperatorNode (ADD) INTEGER 
+                BinaryOperatorNode (ADD) INTEGER 
+                    BinaryOperatorNode (ADD) INTEGER 
+                        BinaryOperatorNode (MULTIPLY) INTEGER 
+                            IdentifierNode (Identifier, quarters) INTEGER 
+                            IntegerConstantNode (Integer, 25) INTEGER 
+                        BinaryOperatorNode (MULTIPLY) INTEGER 
+                            IdentifierNode (Identifier, dimes) INTEGER 
+                            IntegerConstantNode (Integer, 10) INTEGER 
+                    BinaryOperatorNode (MULTIPLY) INTEGER 
+                        IdentifierNode (Identifier, nickels) INTEGER 
+                        IntegerConstantNode (Integer, 5) INTEGER 
+                IdentifierNode (Identifier, pennies) INTEGER 
+        PrintStatementNode (PRINT)  
+            IdentifierNode (Identifier, value) INTEGER 
+            NewlineNode (NEWLINE)  
+        DeclarationNode (IMMUTABLE) BOOLEAN 
+            IdentifierNode (Identifier, moredimes) BOOLEAN 
+            BinaryOperatorNode (GREATER) BOOLEAN 
+                IdentifierNode (Identifier, dimes) INTEGER 
+                IdentifierNode (Identifier, nickels) INTEGER 
+        PrintStatementNode (PRINT)  
+            IdentifierNode (Identifier, moredimes) BOOLEAN 
+            SeparatorNode (SEPARATOR)  
+        DeclarationNode (IMMUTABLE) BOOLEAN 
+            IdentifierNode (Identifier, boot) BOOLEAN 
+            BooleanConstantNode (TRUE) BOOLEAN 
+        DeclarationNode (IMMUTABLE) BOOLEAN 
+            IdentifierNode (Identifier, boof) BOOLEAN 
+            BooleanConstantNode (FALSE) BOOLEAN 
+        PrintStatementNode (PRINT)  
+            IdentifierNode (Identifier, boot) BOOLEAN 
+            SeparatorNode (SEPARATOR)  
+            IdentifierNode (Identifier, boof) BOOLEAN 
+            NewlineNode (NEWLINE)  
+        PrintStatementNode (PRINT)  
+            IdentifierNode (Identifier, boot) BOOLEAN 
+            IdentifierNode (Identifier, boof) BOOLEAN 
+            NewlineNode (NEWLINE)  

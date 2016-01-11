@@ -1,0 +1,18 @@
+main {
+    var a := true;
+    var b := false;
+    var an := !a;
+    var an3 := !!!a;	
+
+    print ((an && (b == an3)) && !b) || false nl; // false
+
+    print true && true nl;		//t
+    print false && true nl;		//f
+    print true && false nl;		//f
+    print false && false nl;	//f
+    print true || true nl;		//t
+    print false || true nl;		//t
+    print true || false nl;		//t
+    print false || false nl;	//f
+
+}

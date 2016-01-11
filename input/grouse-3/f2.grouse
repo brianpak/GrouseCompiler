@@ -1,0 +1,18 @@
+tuple def (abc a, float d);
+tuple abc (float b, char x);
+
+func f2(int c)->abc {
+	let abc.b := c : float;
+	let abc.x := 'z;
+}
+
+main {
+	imm c := f2(2);
+	//print c.b, c.x;
+
+	imm x := fresh abc(0.5, 'x);
+	imm y := fresh def(x, 0.33);
+	let x.b := 0.3;
+	print y nl;
+	print |y|;
+}

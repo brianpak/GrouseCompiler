@@ -1,0 +1,32 @@
+main {
+
+    imm a := [1,2,3];
+    imm b := ['a,'b,'c];
+    imm c := [0.1,0.2,0.3];
+    imm d := ["a","b","c"];
+    imm e := [true, false];
+
+    imm aa := [[1,2],[3,4,5],[6]];
+    imm bb := [['a,'b],['c,'d,'e],['f]];
+    imm cc := [[0.1,0.2],[0.3,0.4,0.5],[0.6]];
+    imm dd := [["a","b"],["c","d","e"],["f"]];
+    imm ee := [[true,false],[true,false,true],[false]];
+
+    imm f := copy a;
+    imm g := copy b;
+    imm h := copy c;
+    imm i := copy d;
+    imm j := copy e;
+
+    imm ff := copy aa;
+    imm gg := copy bb;
+    imm hh := copy cc;
+    imm ii := copy dd;
+    imm jj := copy ee;
+
+    print f nl g nl h nl i nl j nl nl;
+    print ff nl gg nl hh nl ii nl jj nl nl nl;
+
+    print f == a nl g == b nl h == c nl i == d nl j == e nl nl;
+    print ff == aa nl gg == bb nl hh == cc nl ii == dd nl jj == ee nl nl;
+}

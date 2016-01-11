@@ -1,0 +1,10 @@
+main {
+    //imm a := 5 + 4 + 3 + 2 + 1;
+    
+    imm a := true;
+    imm b := !!!a;
+    imm c := a && b;
+    imm d := a || b;
+
+    print a,b,c,d;
+}

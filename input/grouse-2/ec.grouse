@@ -1,0 +1,37 @@
+main {
+    imm a := [1,2,3];
+    imm b := ['a,'b,'c];
+    imm c := [0.1,0.2,0.3];
+    imm d := ["a","b","c"];
+    imm e := [true, false];
+
+    imm f := fresh[int](3);
+    imm g := fresh[char](3);
+    imm h := fresh[float](3);
+    imm i := fresh[string](3);
+    imm j := fresh[bool](3);
+
+    imm ff := fresh[[int]](3);
+    imm gg := fresh[[char]](3);
+    imm hh := fresh[[float]](3);
+    imm ii := fresh[[string]](3);
+    imm jj := fresh[[bool]](3);
+
+    print f nl g nl h nl i nl j nl nl;
+
+    var z := 0;
+    //for (index z of f)
+    //{
+    while (z < 3)
+    {
+        let ff[z] := a;
+        let gg[z] := b;
+        let hh[z] := c;
+        let ii[z] := d;
+        let jj[z] := e;
+
+        let z := z + 1;
+    }
+
+    print ff nl gg nl hh nl ii nl jj nl nl;
+}

@@ -1,0 +1,23 @@
+main {
+    imm a := 2;
+    imm b := 3;
+    imm c := 5;
+    imm d := "";
+    imm e := "hello";
+    imm f := 60;
+    imm g := a * b + c;
+    imm z := a + b * c;
+    imm h := a * (b + c);
+    imm i := f : float : int : char;
+    imm j := a * (b + (f : float : int));
+    imm k := (5 >= 5) == (3 <= 3) != (4 < 4) != (6 > 6);
+
+    imm superlongexp := a - (b + a) * b : int : float : int - a * (b / (f : float : int));
+    var _k~12 := 999;
+    let _k~12 := 888;
+    
+    print a,b,c,d,e nl; // 2, 3, 5, nothing, "hello"
+    print f,g,z,h,i nl; // 60, 11, 17, 16, <
+    print j,k nl;	 // 126, true
+    print i : int + 5;	 // 65
+}

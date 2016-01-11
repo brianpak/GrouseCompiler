@@ -1,0 +1,32 @@
+main {
+    imm A := [7, 5, 3];
+    var i := 7.5;
+    if (i > 0.0) 
+    {
+        print i nl;
+        imm i := "car";
+        print i nl;
+
+        for (index i of A) 
+        {
+            var l := 20;
+            print i nl;
+
+            // cannot be declared because canDeclare() == false
+            //imm i := 10;
+            // cannot be re-assigned because i is immutable
+            //let i := 10;
+
+            for (index j of A) 
+            {
+                print ,,,,j nl;
+                for (index k of A) 
+                {
+                    //let l := i;
+					
+					print ,,,,,,,,k nl;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+main {
+
+    imm a := [1,2,3];
+    imm b := ['a,'b,'c];
+    imm c := [0.1,0.2,0.3];
+    imm d := ["a","b","c"];
+    imm e := [true, false];
+
+    imm aa := [[1,2],[3,4,5],[6]];
+    imm bb := [['a,'b],['c,'d,'e],['f]];
+    imm cc := [[0.1,0.2],[0.3,0.4,0.5],[0.6]];
+    imm dd := [["a","b"],["c","d","e"],["f"]];
+    imm ee := [[true,false],[true,false,true],[false]];
+
+    let aa[2] := a;
+    let bb[2] := b;
+    let cc[2] := c;
+    let dd[2] := d;
+    let ee[2] := e;
+
+    print aa nl bb nl cc nl dd nl ee nl nl nl;
+}

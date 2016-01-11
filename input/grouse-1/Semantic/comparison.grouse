@@ -1,0 +1,22 @@
+main {
+    imm a := 5 > 3;
+    imm b := 3 < 5;
+    imm c := 5 >= 3;
+    imm d := 5 >= 5;
+    imm e := 3 < 5;
+    imm f := 5 <= 5;
+    imm g := 5 == 5;
+    imm h := 3 != 5;
+
+    imm i := 0.3 > 0.2;
+    imm j := 0.2 < 0.3;
+    imm k := 0.3 >= 0.2;
+    imm l := 0.3 >= 0.3;
+    imm m := 0.2 < 0.3;
+    imm n := 0.3 <= 0.3;
+    imm o := 0.3 == 0.3;
+    imm p := 0.2 != 0.3;   
+
+    print a,b,c,d,e,f,g,h nl; // all true
+    print i,j,k,l,m,n,o,p; 
+}

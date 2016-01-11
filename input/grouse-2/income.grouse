@@ -1,0 +1,63 @@
+main {
+
+    imm income := [2000, 3000, 5000, 7000, 10000];
+    imm expense := [300, 700, 4000, 3000, 8000];
+    imm net := [0, 0, 0, 0, 0];
+    imm bonus := [0, 0, 0, 500, 1000];
+    imm survive := fresh[bool](5);
+    imm revive := fresh[bool](5);
+    imm result := fresh[bool](5);
+    imm output := fresh[string](5);
+    imm taxrate := 0.2;
+
+    for (index i of income)
+    {
+        imm currIncome := income[i];
+        imm subTax := (currIncome : float - currIncome : float * taxrate) : int;
+        let net[i] := subTax - expense[i];
+
+        if (net[i] <= 0) 
+        {
+            let survive[i] := false;
+        }
+        else
+        {
+            let survive[i] := true;
+        }
+    }
+
+    //print survive nl;
+
+    var j := 0;
+    while (j < |bonus|)
+    {
+        imm currBonus := bonus[j];
+        let net[j] := net[j] + currBonus;
+        if (net[j] > 0)
+        {
+            let revive[j] := true;
+        }
+        else
+        {
+            let revive[j] := false;
+        }
+        let j := j + 1;
+    }
+
+   // print revive nl;
+
+    for (index i of result)
+    {
+        let result[i] := survive[i] || revive[i];
+        if (!result[i] == true)
+        {
+            let output[i] := "dead";
+        }
+        else
+        {
+            let output[i] := "alive";
+        }
+    }
+
+    print output;
+}

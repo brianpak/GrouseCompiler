@@ -1,0 +1,90 @@
+main {
+	for (index i of [0,1,2,3,4,5,6,7,8,9,10]) {
+		if (i < 5) {
+			continue;
+		}
+		print i,;
+		if (i == 10) {
+			break;
+		}
+	}
+
+	print nl;
+
+	for (element i of [[0],[1,2],[3,4,5],[6,7,8,9]]) {
+		if (|i| < 2) {
+			continue;
+		}
+		if (|i| == 4) {
+			break;
+		}
+		print i,;
+	}
+
+	print nl;
+
+	var i := -1;
+	for (ever) {
+		let i := i + 1;
+		if (i < 5) {
+			continue;
+		}
+		print i,;
+		if (i == 10) {
+			break;
+		}
+	}
+
+	print nl;
+
+
+	for (count -1 < i < 10) {
+		if (i < 5) {
+			continue;
+		}
+		if (i == 8) {
+			break;
+		}
+		print i,;
+	}
+
+	print nl;
+
+	for (count 0 <= i <= 9) {
+		if (i < 5) {
+			continue;
+		}
+		if (i == 8) {
+			break;
+		}
+		print i,;
+	}
+
+	print nl;
+
+	var a := 5;
+	while (a < 10)
+	{
+		if (a == 8)
+		{
+			break;
+		}
+		print a,;
+
+		let a := a + 1;
+	}
+
+	print nl;
+
+	let a := 0;
+	while (a < 10)
+	{
+		let a := a + 1;
+		if (a > 5) {
+			continue;
+		}
+		else {
+			print a,;
+		}
+	}
+}

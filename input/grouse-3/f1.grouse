@@ -1,0 +1,35 @@
+//tuple turkey (int a, float b);
+//tuple duck (int c, float xy, int d);
+
+//tuple test swan;
+func f0(int x, float y)->(char p, bool q) {
+	//imm a := 14;
+	imm b := 1.23;
+	imm c := 20;
+
+	let p := 'c;
+	let q := true;
+
+	imm e := f1(b, c);
+	print e nl;
+
+}
+func f1(float a, int b)->(int c, int d) {	
+	let c := a : int + b;
+	let d := 45;
+}
+
+//func f2(char c, bool d)->bird {
+//}
+//tuple swan bird;
+//tuple bird (int i, float c);
+
+main {
+	//imm a := f0(1, 2.3);
+	//imm b := fresh f0('g, true);
+	//print a.p, a.q nl;
+	//print b.p, b.q;
+
+	imm a := f0(1, 2.3);
+	print a nl;
+}

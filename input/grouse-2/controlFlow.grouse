@@ -1,0 +1,28 @@
+main {
+    var a := true;
+    var b := 1;
+
+    if (a) {
+	let b := 2;
+    }
+    else {
+	let b := 3;
+    }
+
+    {}
+
+    print b;
+
+    while (a) {
+        let a := false;
+        let b := 4;
+    }
+
+    print b;
+
+    for (index i of expr) {
+
+    }
+
+    print b;
+}

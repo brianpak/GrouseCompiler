@@ -1,0 +1,22 @@
+main {
+    imm i := [0,0];
+    //for (index i of [1,2]) {
+    for (index i of [0,0]) {
+        var a := "str";
+        var b := fresh[int](0);
+        print |a|,|b|;
+		
+		//let c := 5;
+		for (index j of [0,0]) {
+			for (index k of [0,0]) {
+				for (index l of [0,0]) {
+					var i := 10;
+				}
+			}
+		}
+
+        //var r := [7,5];
+        //let r := ["7","5"];
+    }
+    //}
+}

@@ -1,0 +1,8 @@
+main {
+    //imm b := 5.0 / 0;
+    //imm b := 5.0 / 0.0;
+    imm b := 5.0 / (0.0e0 : float);
+    imm c := 5 / 0;
+    
+    print b,c nl; // float divide by zero error
+}

@@ -1,0 +1,15 @@
+main {
+    var a := "abc";
+    var b := "def";
+    var c := "ghi";
+    var d := "ddd";
+    var e := "eee";
+    var f := "fff";
+    var g := a + d;
+    var h := b + e;
+    var i := c + g;
+    //print a + b + (c + g) + h + i nl;
+    print a + b nl;
+	print |a + b|;
+
+}

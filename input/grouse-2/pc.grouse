@@ -1,0 +1,33 @@
+main {
+    imm a := [1,2,3];
+    imm b := ['a,'b,'c];
+    imm c := [0.1,0.2,0.3];
+    imm d := ["a","b","c"];
+    imm e := [true, false];
+
+    imm aa := [[1,2],[3,4,5],[6]];
+    imm bb := [['a,'b],['c,'d,'e],['f]];
+    imm cc := [[0.1,0.2],[0.3,0.4,0.5],[0.6]];
+    imm dd := [["a","b"],["c","d","e"],["f"]];
+    imm ee := [[true,false],[true,false,true],[false]];
+
+    imm aaa := [[[1,2]],[[3,4,5]],[[6]]];
+    imm bbb := [[['a,'b]],[['c,'d,'e]],[['f]]];
+    imm ccc := [[[0.1,0.2]],[[0.3,0.4,0.5]],[[0.6]]];
+    imm ddd := [[["a","b"]],[["c","d","e"]],[["f"]]];
+    imm eee := [[[true,false]],[[true,false,true]],[[true]]];
+
+    print a nl b nl c nl d nl e nl nl;
+    print aa nl bb nl cc nl dd nl ee nl nl;
+	
+	for (index i of a)
+	{
+		let aaa[i][0][0] := 100;
+		let bbb[i][0][0] := 'z;
+		let ccc[i][0][0] := 100.5;
+		let ddd[i][0][0] := "z";
+		let eee[i][0][0] := false;
+	}
+	
+	print aaa nl bbb nl ccc nl ddd nl eee nl nl;
+}

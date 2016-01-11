@@ -1,0 +1,38 @@
+main {
+    var a := true;
+    var i := 0;
+    if (a) 
+    {
+        let i := i + 1;
+        if (i == 1) 
+        {
+            print i nl;
+        }
+
+    }
+    else 
+    {
+        var c := 4;
+        print c nl;
+    }
+
+    if (!a) 
+    {
+        var b := 5;
+        print b nl;
+    }
+    else 
+    {
+        let i := i + 3;
+        if (i == 10) 
+        {
+            print i nl;
+        }
+        else 
+        {
+            let i := i + 100;
+        }
+    }
+
+    print i nl;
+}

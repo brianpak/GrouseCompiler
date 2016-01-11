@@ -1,0 +1,17 @@
+main {
+    var a := 2;
+    var b := 3.3;
+    let a := 5;
+    var c := "string";
+    var d := 'z;
+    var e := 6.6;
+    var f := 10.0;
+    let d := 'a;
+    let f := f;
+    let f := b * 2.3 + f;
+    let c := "";
+    let c := "hello";
+    imm g := a * b : int + d : int;
+	
+	print a,b,c,d,e,f,g; // 5, 3.3, "hello", a, 6.6, 17.59, 112
+}

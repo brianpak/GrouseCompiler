@@ -1,0 +1,9 @@
+main {
+    imm _ := 1;
+    imm ! := 2;
+    imm a := 3;
+    imm A := 4;
+    imm _a43~ := 5;
+    imm _aa! := 6;
+    imm advvvasdfffewerqqqqqqddasdzzzxxxffffertttttiiifksldkznnxnxxxxmmddlerrrrew := 7;
+}
