@@ -13,11 +13,11 @@ ex) var a := b + c * d;
 
     becomes       	 a
 			 |
-			 *
+			 +
 			/ \
-		      +	    d
-	             / \
-	            b   c
+		      b	   *
+	                  / \
+	                 c   d
 ```
 				
 				
