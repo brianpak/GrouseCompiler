@@ -36,10 +36,10 @@ Assembly codes are generated from this part<br />
 Each node has its own machine code to be produced. Typically primitives result in values where as identifiers output an address of the memory<br />
 ```
 ex) var a := b + c * d;
-    it will load the value of b on the ASM stack    
-    it will load the value of c on the ASM stack
-    it will add the two values (b + c)
+    it will load the value of c on the ASM stack    
     it will load the value of d on the ASM stack
-    it will multiply the two values ((b + c) * d)
+    it will multiply the two values (c * d)
+    it will load the value of b on the ASM stack
+    it will add the two values (b + (c * d))
     it will store the computed value to the location of a
 ```
