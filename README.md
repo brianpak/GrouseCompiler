@@ -21,7 +21,7 @@ ex) var a := b + c * d;
 ```
 				
 				
-3) *src/semanticAnalyzer/SemanticAnalysisVisitor4.java*<br />
+3) *src/semanticAnalyzer/SemanticAnalysisVisitor.java*<br />
 Handles the semantic analysis of the source<br />
 One or more visits on the tree built by the parser happen depending on features<br />
 Mostly type checks are involved using the function signatures<br />
